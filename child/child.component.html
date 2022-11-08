@@ -1,0 +1,14 @@
+<div *ngFor="let item of arrayOne; let i = index">
+
+{{hideItems | json}}
+<div class="rame" (click)="showentity(item)"  >
+
+    {{item.question}}
+
+</div>
+
+<div [hidden]="!hideItems[item.answer]">
+    {{item.answer}}
+</div>
+
+</div>
